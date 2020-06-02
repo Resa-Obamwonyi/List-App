@@ -19,29 +19,26 @@
             <span class="id-column">ID</span>
             <span>Item</span>
           </div>
-          <!-- Define the items array -->
+        
+        <ul class="table-body">
+          <!-- Use forEach to print the elements of the items array -->
+          <% 
+          items.forEach((item)=>{%>
+            <li>
+              <span class="id-column">
+                <!-- Display the id property of item -->
+                 <%=item.id %>
+                
+              </span>
+              <span class="name-column">
+                <!-- Display the name property of item -->
+                <%=item.name %>
+                
+              </span>
+            </li>
+         <% });%>
           
-          
-          <ul class="table-body">
-            <!-- Delete the three <li> elements below -->
-            <li>
-              <span class="id-column">1</span>
-              <span class="name-column">potatoes</span>
-            </li>
-            <li>
-              <span class="id-column">2</span>
-              <span class="name-column">carrots</span>
-            </li>
-            <li>
-              <span class="id-column">3</span>
-              <span class="name-column">onions</span>
-            </li>
-            <!-- Delete up to here -->
-            
-            <!-- Use forEach to print the elements of the items array -->
-            
-            
-          </ul>
+        </ul>
         </div>
       </div>
 </body>
