@@ -39,4 +39,13 @@ app.post('/create', (req, res) => {
   );
 });
 
+// Add a route for deleting items
+app.post('/delete/:id', (req, res) => {
+  // Write code to delete from the database
+connection.query('DELETE FROM items WHERE id = ?',
+[req.params.id], (error,results) =>{
+    res.redirect('/index');
+});  
+});
+
 app.listen(3000);
