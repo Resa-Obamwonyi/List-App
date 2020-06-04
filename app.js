@@ -57,4 +57,13 @@ app.get('/edit/:id', (req, res) => {
   });
 });
 
+// Add a route for updating items
+app.post('/update/:id', (req,res) => {
+   // Write code to update item in the database
+   connection.query('UPDATE items SET name = ? WHERE id = ?',
+   [req.body.itemName ,req.params.id],(error, results) => {
+     res.redirect('/index');
+   });
+});
+
 app.listen(3000);

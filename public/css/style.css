@@ -5,7 +5,7 @@
 
 html {
   font-size: 100%;
-  font-family: 'Hiragino Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.7;
   letter-spacing: 1px;
 }
@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   background-color: #f6faff;
-  color: #6c7686;
+  color: #031025;
 }
 
 ul, li {
@@ -25,7 +25,7 @@ ul, li {
 a {
   display: block;
   text-decoration: none;
-  color: #2d3133;
+  color:#031025;
   font-size: 14px;
 }
 
@@ -92,7 +92,7 @@ input {
   font-weight: 600;
   color: #42cea9;;
   background-color: #ffffff;
-  border: 2px solid #58d2b2;
+  border: 2px solid #398b76;
   border-radius: 2px;
 }
 
@@ -153,7 +153,7 @@ header {
 }
 
 .container-header .new-button {
-  background: #80bcff;
+  background:#072352;
   border-radius: 30px;
   font-size: 14px;
   width: 120px;
@@ -161,7 +161,7 @@ header {
   line-height: 43px;
   text-align: center;
   color: #ffffff;
-  border: 2px solid #80bcff;
+  border: 2px solid #072352;
 }
 .container-header .new-button:hover {
   background-color: #ffffff;
@@ -179,7 +179,7 @@ header {
 }
 
 .cancel-button:hover {
-  color: #80bcff;
+  color: #072352;
 }
 
 .container-header h1 {
@@ -189,7 +189,7 @@ header {
 /* index ================================ */
 .table-head {
   display: flex;
-  background-color: #b7cadc;
+  background-color: #072352;
   border-radius: 2px 2px 0 0;
   height: 44px;
   font-size: 16px;
@@ -301,15 +301,15 @@ header {
   margin-left: auto;
   border-radius: 30px;
   font-size: 14px;
-  background-color: #80bcff;
+  background-color: #072352;
   color: #ffffff;
   cursor: pointer;
   outline: none;
-  border: 2px solid #80bcff;
+  border: 2px solid#072352;
 }
 
 .item-form-wrapper input[type="submit"]:hover {
   background-color: #ffffff;
-  color: #80bcff;
+  color: #072352;
   transition: all 0.3s ease;
 }
