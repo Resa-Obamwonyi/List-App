@@ -48,4 +48,13 @@ connection.query('DELETE FROM items WHERE id = ?',
 });  
 });
 
+// Add a route for the edit page
+app.get('/edit/:id', (req, res) => {
+  // Write code to get the selected item from the database
+  connection.query('SELECT * FROM items WHERE id = ?',
+  [req.params.id],(error, results) => {
+    res.render('edit.ejs', {item:results[0]});
+  });
+});
+
 app.listen(3000);
